@@ -38,6 +38,16 @@
 }
 
 
+
+-(instancetype)initWithFrame:(CGRect)frame;{
+    self = [super initWithFrame:frame];
+    if(self){
+        [self startConfig];
+    }
+    return self;
+}
+
+
 - (void)startConfig
 {
     self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.0];

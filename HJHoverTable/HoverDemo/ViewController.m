@@ -34,7 +34,11 @@ static const CGFloat ORIGIN_TOP = 120.f;
         make.left.bottom.right.mas_equalTo(0);
     }];
 
-    [self.hoverTable reloadData];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        //延时进行页面刷新 等待父视图布局完成
+        [self.hoverTable reloadData];
+    });
+    
 }
 
 
