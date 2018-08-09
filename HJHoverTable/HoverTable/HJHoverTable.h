@@ -27,17 +27,20 @@ static inline HJTopLimit HJTopLimitMake(CGFloat originTop, CGFloat hoverTop)
 
 
 @protocol HJHoverTableDelegate
+
+@required
+- (nonnull HJGestureTable *)gestureTable;
+//返回头部距离父视图顶部高度限制
+- (HJTopLimit)limitOfMarginTop;
+
+@optional
 //自定义悬停头部视图
 - (UIView *)headerOfHoverTable;
 //返回悬停头部视图高度
 - (CGFloat)headerHOfHoverTable;
 //返回配置好的table
-- (HJGestureTable *)gestureTable;
-//返回头部距离父视图顶部高度限制
-- (HJTopLimit)limitOfMarginTop;
 
 @end
-
 
 @interface HJHoverTable : UIScrollView
 
@@ -47,6 +50,12 @@ static inline HJTopLimit HJTopLimitMake(CGFloat originTop, CGFloat hoverTop)
 
 @property (nonatomic ,strong ,readonly) UIView * wrapperView;
 
+@property (nonatomic ,assign ,readonly) BOOL isHover;//是否悬停
+
+@property (nonatomic, assign, readonly) CGFloat hoverHeaderH;//悬停视图Header高度
+
+@property (nonatomic, assign, readonly) HJTopLimit topLimit;
+
 /** 代理 **/
 @property (nonatomic ,weak ,nullable) NSObject<HJHoverTableDelegate> * hoverTableDelegate;
 
@@ -54,11 +63,6 @@ static inline HJTopLimit HJTopLimitMake(CGFloat originTop, CGFloat hoverTop)
 
 @property (nonatomic ,weak ,nullable) id<UITableViewDataSource> tableDataSource;
 
-@property (nonatomic ,assign ,readonly) BOOL isHover;//是否悬停
-
-@property (nonatomic, assign, readonly) CGFloat hoverHeaderH;//悬停视图Header高度
-
-@property (nonatomic, assign, readonly) HJTopLimit topLimit;
 
 /** 方法 **/
 - (void)reloadData;

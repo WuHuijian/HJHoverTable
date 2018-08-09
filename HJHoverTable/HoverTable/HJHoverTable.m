@@ -65,12 +65,16 @@
 {
     if (self.hoverHeader) {
         [self.hoverHeader mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.top.left.right.mas_equalTo(0);
+            make.left.mas_equalTo(0);
+            make.right.mas_equalTo(0);
+            make.top.mas_equalTo(0);
             make.height.mas_equalTo(self.hoverHeaderH);
         }];
         
         [self.tableView mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.left.right.bottom.mas_equalTo(0);
+            make.left.mas_equalTo(0);
+            make.right.mas_equalTo(0);
+            make.bottom.mas_equalTo(0);
             make.top.mas_equalTo(self.hoverHeader.mas_bottom);
         }];
     }else{
