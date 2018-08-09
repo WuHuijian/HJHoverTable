@@ -15,6 +15,9 @@
 		D2D21C82211AC9CC00A517FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D21C81211AC9CC00A517FB /* main.m */; };
 		D2D21C8C211AC9CC00A517FB /* HJHoverTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D21C8B211AC9CC00A517FB /* HJHoverTableTests.m */; };
 		D2D21C97211AC9CC00A517FB /* HJHoverTableUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D21C96211AC9CC00A517FB /* HJHoverTableUITests.m */; };
+		D2D21CA7211ACA8300A517FB /* HJHoverTable.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D21CA6211ACA8300A517FB /* HJHoverTable.m */; };
+		D2D21CAA211AE87200A517FB /* HJGestureTable.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D21CA9211AE87200A517FB /* HJGestureTable.m */; };
+		E6AB5B56E5405CE0BB2F22BF /* libPods-HJHoverTable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B78138508B172E670E86556 /* libPods-HJHoverTable.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C41898907389A000A64BA31 /* Pods-HJHoverTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJHoverTable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJHoverTable/Pods-HJHoverTable.debug.xcconfig"; sourceTree = "<group>"; };
+		8B78138508B172E670E86556 /* libPods-HJHoverTable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HJHoverTable.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D21C6F211AC9C800A517FB /* HJHoverTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJHoverTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D21C72211AC9C800A517FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D2D21C73211AC9C800A517FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +56,11 @@
 		D2D21C92211AC9CC00A517FB /* HJHoverTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJHoverTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D21C96211AC9CC00A517FB /* HJHoverTableUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJHoverTableUITests.m; sourceTree = "<group>"; };
 		D2D21C98211AC9CC00A517FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D21CA5211ACA8300A517FB /* HJHoverTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJHoverTable.h; sourceTree = "<group>"; };
+		D2D21CA6211ACA8300A517FB /* HJHoverTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJHoverTable.m; sourceTree = "<group>"; };
+		D2D21CA8211AE87200A517FB /* HJGestureTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJGestureTable.h; sourceTree = "<group>"; };
+		D2D21CA9211AE87200A517FB /* HJGestureTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJGestureTable.m; sourceTree = "<group>"; };
+		F96EEFA70DF86EF230323A98 /* Pods-HJHoverTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJHoverTable.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJHoverTable/Pods-HJHoverTable.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6AB5B56E5405CE0BB2F22BF /* libPods-HJHoverTable.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68EB5178724D4C8D007B1A73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C41898907389A000A64BA31 /* Pods-HJHoverTable.debug.xcconfig */,
+				F96EEFA70DF86EF230323A98 /* Pods-HJHoverTable.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		79744888829D5C83FACABC98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B78138508B172E670E86556 /* libPods-HJHoverTable.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D29322F8211C3CB8008E4460 /* HoverDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D2D21C75211AC9C800A517FB /* ViewController.h */,
+				D2D21C76211AC9C800A517FB /* ViewController.m */,
+			);
+			path = HoverDemo;
+			sourceTree = "<group>";
+		};
 		D2D21C66211AC9C700A517FB = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +122,8 @@
 				D2D21C8A211AC9CC00A517FB /* HJHoverTableTests */,
 				D2D21C95211AC9CC00A517FB /* HJHoverTableUITests */,
 				D2D21C70211AC9C800A517FB /* Products */,
+				68EB5178724D4C8D007B1A73 /* Pods */,
+				79744888829D5C83FACABC98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +140,10 @@
 		D2D21C71211AC9C800A517FB /* HJHoverTable */ = {
 			isa = PBXGroup;
 			children = (
+				D2D21CA4211ACA0D00A517FB /* HoverTable */,
+				D29322F8211C3CB8008E4460 /* HoverDemo */,
 				D2D21C72211AC9C800A517FB /* AppDelegate.h */,
 				D2D21C73211AC9C800A517FB /* AppDelegate.m */,
-				D2D21C75211AC9C800A517FB /* ViewController.h */,
-				D2D21C76211AC9C800A517FB /* ViewController.m */,
 				D2D21C78211AC9C800A517FB /* Main.storyboard */,
 				D2D21C7B211AC9CC00A517FB /* Assets.xcassets */,
 				D2D21C7D211AC9CC00A517FB /* LaunchScreen.storyboard */,
@@ -132,6 +171,17 @@
 			path = HJHoverTableUITests;
 			sourceTree = "<group>";
 		};
+		D2D21CA4211ACA0D00A517FB /* HoverTable */ = {
+			isa = PBXGroup;
+			children = (
+				D2D21CA5211ACA8300A517FB /* HJHoverTable.h */,
+				D2D21CA6211ACA8300A517FB /* HJHoverTable.m */,
+				D2D21CA8211AE87200A517FB /* HJGestureTable.h */,
+				D2D21CA9211AE87200A517FB /* HJGestureTable.m */,
+			);
+			path = HoverTable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +189,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2D21C9B211AC9CC00A517FB /* Build configuration list for PBXNativeTarget "HJHoverTable" */;
 			buildPhases = (
+				9C32765719EE44CDBD365021 /* [CP] Check Pods Manifest.lock */,
 				D2D21C6B211AC9C800A517FB /* Sources */,
 				D2D21C6C211AC9C800A517FB /* Frameworks */,
 				D2D21C6D211AC9C800A517FB /* Resources */,
@@ -257,6 +308,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9C32765719EE44CDBD365021 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HJHoverTable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D2D21C6B211AC9C800A517FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,7 +336,9 @@
 			files = (
 				D2D21C77211AC9C800A517FB /* ViewController.m in Sources */,
 				D2D21C82211AC9CC00A517FB /* main.m in Sources */,
+				D2D21CAA211AE87200A517FB /* HJGestureTable.m in Sources */,
 				D2D21C74211AC9C800A517FB /* AppDelegate.m in Sources */,
+				D2D21CA7211ACA8300A517FB /* HJHoverTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,9 +505,11 @@
 		};
 		D2D21C9C211AC9CC00A517FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C41898907389A000A64BA31 /* Pods-HJHoverTable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TWSN29Y9H7;
 				INFOPLIST_FILE = HJHoverTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,9 +523,11 @@
 		};
 		D2D21C9D211AC9CC00A517FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F96EEFA70DF86EF230323A98 /* Pods-HJHoverTable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TWSN29Y9H7;
 				INFOPLIST_FILE = HJHoverTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
